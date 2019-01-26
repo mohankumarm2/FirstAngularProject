@@ -1,14 +1,22 @@
-<p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">My First Application</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2 bwm-search" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0 btn-bwm-search" type="submit">Search</button>
+  </form>
 
-<h1 align="center"> I Am header Component <br/>
-  <button (click)="clickHander()" style="font-size: 12px">Click</button>
-</h1>
-
-<div align="right" style="background-color: aquamarine; padding: 6px">
-  <input type="text" onfocus="searchBoxAction()" placeholder="{{SEARCH_TAG}}"/>
-  <button (click)="searchButtonClickHandler()"
-          style="border-color: aqua;
-           color: aquamarine;
-           text-decoration-color: aqua"> Search
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
-</div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Login<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+    </ul>
+  </div>
+</nav>
