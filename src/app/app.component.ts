@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FirstAngularProject';
+  FirstText='this is the first text';
+
+  clicked(){
+  alert("clicked from button");
+  }
 }
